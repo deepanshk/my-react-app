@@ -1,18 +1,10 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 
 const PageOne: React.FC = () => {
-  const widgetRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (widgetRef.current) {
-      widgetRef.current.setAttribute("debateid", "64253");
-    }
-  }, []);
-
   return (
     <div>
       <h2>Page One</h2>
-      <div className="sided-widget" ref={widgetRef}></div>
+      <div className="sided-widget" debateId="64253"></div>
       <p>This is the first demo page.</p>
     </div>
   );
