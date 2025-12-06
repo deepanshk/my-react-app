@@ -7,6 +7,8 @@ const PageTwo: React.FC = () => {
       <div
         className="sided-widget"
         clientId="1"
+        width="800"
+        height="400"
         placementId="551"
         id="sided-widget"
       ></div>
