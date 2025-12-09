@@ -1,13 +1,10 @@
-import React, { Suspense, useState } from "react";
+import React, { Suspense } from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 const PageOne = React.lazy(() => import("./pages/PageOne"));
 const PageTwo = React.lazy(() => import("./pages/PageTwo"));
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
